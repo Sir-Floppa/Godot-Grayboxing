@@ -1,2 +1,2 @@
 # Godot-Grayboxing
-A set of simple pixelart assets for grayboxing on Godot.
+A set of simple pixelart assets for grayboxing in 2D Godot projects.
