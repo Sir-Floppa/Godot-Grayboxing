@@ -1,9 +1,7 @@
 [gd_scene load_steps=3 format=3 uid="uid://bn6xi15huhf7h"]
 
 [ext_resource type="PackedScene" uid="uid://b2744732acboc" path="res://GrayBox/Common/texture.tscn" id="1_t5tjl"]
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_j12iu"]
-size = Vector2(32, 64)
+[ext_resource type="PackedScene" uid="uid://dc2yci8th0tyw" path="res://GrayBox/Common/collision.tscn" id="2_yxias"]
 
 [node name="Block32x64" type="StaticBody2D"]
 
@@ -12,5 +10,5 @@ hframes = 16
 vframes = 8
 frame = 4
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-shape = SubResource("RectangleShape2D_j12iu")
+[node name="Collision" parent="." instance=ExtResource("2_yxias")]
+scale = Vector2(2, 4)
