@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://buhiyjcolju5w"]
+
+[ext_resource type="Script" path="res://GrayBox/Manager/graybox_manager.gd" id="1_4q30e"]
+
+[node name="GrayboxManager" type="Node2D"]
+script = ExtResource("1_4q30e")

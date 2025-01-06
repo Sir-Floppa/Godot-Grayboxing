@@ -1,6 +1,6 @@
 [gd_scene load_steps=4 format=3 uid="uid://dvpu2iiyc0k7k"]
 
-[ext_resource type="Script" path="res://GrayBox/Common/Block.gd" id="1_567c2"]
+[ext_resource type="Script" path="res://GrayBox/Common/block.gd" id="1_567c2"]
 [ext_resource type="PackedScene" uid="uid://b2744732acboc" path="res://GrayBox/Common/texture.tscn" id="1_eabet"]
 [ext_resource type="PackedScene" uid="uid://dc2yci8th0tyw" path="res://GrayBox/Common/collision.tscn" id="2_07rw0"]
 

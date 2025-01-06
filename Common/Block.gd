@@ -1,4 +1,4 @@
-class_name Block extends StaticBody2D
+class_name GrayboxBlock extends StaticBody2D
 ## A grayboxing block for map/scene prototyping.
 ##
 ## Controls the visibility and/or interactivity of the block.
@@ -20,6 +20,7 @@ class_name Block extends StaticBody2D
 
 @onready var texture: Sprite2D = $Texture
 @onready var collision: CollisionShape2D = $Collision
+
 
 func _ready() -> void:
 	collision.disabled = disable_collision
