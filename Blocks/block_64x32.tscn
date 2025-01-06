@@ -1,9 +1,11 @@
-[gd_scene load_steps=3 format=3 uid="uid://bxqkd8hft4cnj"]
+[gd_scene load_steps=4 format=3 uid="uid://bxqkd8hft4cnj"]
 
 [ext_resource type="PackedScene" uid="uid://b2744732acboc" path="res://GrayBox/Common/texture.tscn" id="1_4sf2d"]
+[ext_resource type="Script" path="res://GrayBox/Common/Block.gd" id="1_10gbw"]
 [ext_resource type="PackedScene" uid="uid://dc2yci8th0tyw" path="res://GrayBox/Common/collision.tscn" id="2_xmj6g"]
 
 [node name="Block64x32" type="StaticBody2D"]
+script = ExtResource("1_10gbw")
 
 [node name="Texture" parent="." instance=ExtResource("1_4sf2d")]
 hframes = 8

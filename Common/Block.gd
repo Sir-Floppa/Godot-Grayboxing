@@ -25,7 +25,7 @@ func _ready() -> void:
 	collision.disabled = disable_collision
 	if disable_texture:
 		texture.hide()
-	if !Engine.is_editor_hint():
+	if not Engine.is_editor_hint():
 		if display_in_game and not disable_texture:
 			texture.show()
 		
