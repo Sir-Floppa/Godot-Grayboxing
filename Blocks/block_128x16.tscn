@@ -1,16 +1,16 @@
-[gd_scene load_steps=4 format=3 uid="uid://c1m54gnakl2aa"]
+[gd_scene load_steps=4 format=3 uid="uid://c4nrknqpw7wad"]
 
-[ext_resource type="Script" path="res://GrayBox/Common/Block.gd" id="1_8d7wl"]
-[ext_resource type="PackedScene" uid="uid://b2744732acboc" path="res://GrayBox/Common/texture.tscn" id="1_n0toa"]
-[ext_resource type="PackedScene" uid="uid://dc2yci8th0tyw" path="res://GrayBox/Common/collision.tscn" id="2_1oygb"]
+[ext_resource type="Script" path="res://GrayBox/Common/Block.gd" id="1_bd1h6"]
+[ext_resource type="PackedScene" uid="uid://b2744732acboc" path="res://GrayBox/Common/texture.tscn" id="2_85f0x"]
+[ext_resource type="PackedScene" uid="uid://dc2yci8th0tyw" path="res://GrayBox/Common/collision.tscn" id="3_j5unr"]
 
 [node name="Block128x16" type="StaticBody2D"]
-script = ExtResource("1_8d7wl")
+script = ExtResource("1_bd1h6")
 
-[node name="Texture" parent="." instance=ExtResource("1_n0toa")]
-hframes = 32
-vframes = 4
-frame = 3
+[node name="Texture" parent="." instance=ExtResource("2_85f0x")]
+hframes = 4
+vframes = 32
+frame = 76
 
-[node name="Collision" parent="." instance=ExtResource("2_1oygb")]
-scale = Vector2(1, 8)
+[node name="Collision" parent="." instance=ExtResource("3_j5unr")]
+scale = Vector2(8, 1)
