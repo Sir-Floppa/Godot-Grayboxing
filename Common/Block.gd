@@ -30,3 +30,6 @@ func _ready() -> void:
 		if display_in_game and not disable_texture:
 			texture.show()
 		
+
+func is_block():
+	return true
