@@ -11,6 +11,7 @@ class_name GrayboxManager extends Node2D
 ## Defines if the Blocks are visible
 ## on the built game
 @export var display_in_game: bool = false
+var child_type_msg = "GrayboxManager should not contain non Block children."
 
 
 func _ready() -> void:
@@ -19,3 +20,13 @@ func _ready() -> void:
 			child.disable_collision = disable_collisions
 			child.disable_texture = disable_textures
 			child.display_in_game = display_in_game
+
+
+func _get_configuration_warnings() -> PackedStringArray:
+	var warnings: Array[String] = []
+	for child in self.get_children():
+		if type_string(typeof(child)) != "Block":
+			warnings.append(child_type_msg)
+			break
+			
+	return warnings
