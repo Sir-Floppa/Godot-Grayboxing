@@ -4,3 +4,6 @@
 
 [node name="GrayboxManager" type="Node2D"]
 script = ExtResource("1_4q30e")
+disable_textures = false
+disable_collisions = false
+display_in_game = false

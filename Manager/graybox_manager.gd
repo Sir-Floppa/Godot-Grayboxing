@@ -4,22 +4,14 @@ class_name GrayboxManager extends Node2D
 
 ## Defines if contained Blocks should have their
 ## textures hidden.
-@export var disable_textures: bool = false
+@export var disable_textures: bool = true
 ## Defines if contained Blocks have their
 ## collisions disabled
-@export var disable_collisions: bool = false
+@export var disable_collisions: bool = true
 ## Defines if the Blocks are visible
 ## on the built game
-@export var display_in_game: bool = false
+@export var display_in_game: bool = true
 var child_type_msg = "GrayboxManager should not contain non GrayboxBlock children."
-
-
-func _ready() -> void:
-	for child: GrayboxBlock in self.get_children():
-		if not child.ignore_manager_config:
-			child.disable_collision = disable_collisions
-			child.disable_texture = disable_textures
-			child.display_in_game = display_in_game
 
 
 func _get_configuration_warnings() -> PackedStringArray:

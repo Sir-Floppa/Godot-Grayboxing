@@ -23,6 +23,12 @@ class_name GrayboxBlock extends StaticBody2D
 
 
 func _ready() -> void:
+	if not ignore_manager_config:
+		var parent = get_parent()
+		disable_collision = parent.disable_collisions
+		disable_texture = parent.disable_textures
+		display_in_game = parent.display_in_game
+	
 	collision.disabled = disable_collision
 	if disable_texture:
 		texture.hide()
