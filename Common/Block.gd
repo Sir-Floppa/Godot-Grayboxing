@@ -19,7 +19,7 @@ class_name GrayboxBlock extends StaticBody2D
 @export var display_in_game: bool = false
 
 @onready var texture: Sprite2D = $Texture
-@onready var collision: CollisionShape2D = $Collision
+@onready var collision := $Collision
 
 
 func _ready() -> void:
