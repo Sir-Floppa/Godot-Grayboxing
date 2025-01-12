@@ -9,8 +9,8 @@ script = ExtResource("1_8ke5y")
 [node name="Texture" parent="." instance=ExtResource("2_r7rro")]
 hframes = 16
 vframes = 8
-frame = 10
+frame = 12
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
 build_mode = 1
-polygon = PackedVector2Array(-16, 32, 16, 32, -16, -32)
+polygon = PackedVector2Array(-16, 32, 16, -32, -16, -32)
