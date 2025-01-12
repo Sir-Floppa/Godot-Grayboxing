@@ -7,10 +7,13 @@
 script = ExtResource("1_4swa4")
 
 [node name="Texture" parent="." instance=ExtResource("2_5rs53")]
+position = Vector2(3, 3)
+offset = Vector2(1, 1)
 hframes = 64
 vframes = 64
 frame = 1952
 
 [node name="Collision" type="CollisionPolygon2D" parent="."]
+position = Vector2(4, 4)
 build_mode = 1
 polygon = PackedVector2Array(-4, 4, 4, -4, -4, -4)

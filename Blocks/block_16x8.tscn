@@ -10,9 +10,12 @@ size = Vector2(16, 8)
 script = ExtResource("1_82yux")
 
 [node name="Texture" parent="." instance=ExtResource("1_17pye")]
+position = Vector2(8, 4)
 hframes = 32
 vframes = 64
 frame = 458
 
 [node name="Collision" type="CollisionShape2D" parent="."]
+position = Vector2(8, 4)
 shape = SubResource("RectangleShape2D_j12iu")
+debug_color = Color(0, 0.6, 0.701961, 0)

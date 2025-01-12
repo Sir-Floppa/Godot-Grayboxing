@@ -1,0 +1,74 @@
+[gd_scene load_steps=19 format=3 uid="uid://brhkjkrvlb5w0"]
+
+[ext_resource type="Script" path="res://GrayBox/Manager/graybox_manager.gd" id="1_vxx74"]
+[ext_resource type="PackedScene" uid="uid://bojtldn7qrxdl" path="res://GrayBox/Blocks/block_16x16.tscn" id="1_xoxfi"]
+[ext_resource type="PackedScene" uid="uid://we38qt0h03wd" path="res://GrayBox/Blocks/block_16x32.tscn" id="2_rqvc2"]
+[ext_resource type="PackedScene" uid="uid://dynli0wdypqf" path="res://GrayBox/Blocks/block_16x64.tscn" id="3_5h7mx"]
+[ext_resource type="PackedScene" uid="uid://c1m54gnakl2aa" path="res://GrayBox/Blocks/block_16x128.tscn" id="4_6inpx"]
+[ext_resource type="PackedScene" uid="uid://brpt6d4egffbm" path="res://GrayBox/Blocks/block_16x256.tscn" id="5_00wli"]
+[ext_resource type="PackedScene" uid="uid://u5r831op7jqs" path="res://GrayBox/Blocks/block_32x16.tscn" id="6_ws5f1"]
+[ext_resource type="PackedScene" uid="uid://ctfabe2b3xuip" path="res://GrayBox/Blocks/block_32x32.tscn" id="7_g24d4"]
+[ext_resource type="PackedScene" uid="uid://bn6xi15huhf7h" path="res://GrayBox/Blocks/block_32x64.tscn" id="8_iorsf"]
+[ext_resource type="PackedScene" uid="uid://bmfximwno2kan" path="res://GrayBox/Blocks/block_32x256.tscn" id="9_swyq4"]
+[ext_resource type="PackedScene" uid="uid://dvpu2iiyc0k7k" path="res://GrayBox/Blocks/block_64x16.tscn" id="10_ywgdl"]
+[ext_resource type="PackedScene" uid="uid://bxqkd8hft4cnj" path="res://GrayBox/Blocks/block_64x32.tscn" id="11_g1hes"]
+[ext_resource type="PackedScene" uid="uid://d4jmc1y0fksqu" path="res://GrayBox/Blocks/block_64x64.tscn" id="12_ffn1i"]
+[ext_resource type="PackedScene" uid="uid://c4nrknqpw7wad" path="res://GrayBox/Blocks/block_128x16.tscn" id="13_bqbo6"]
+[ext_resource type="PackedScene" uid="uid://dcg36svavf7to" path="res://GrayBox/Blocks/block_256x16.tscn" id="14_78tia"]
+[ext_resource type="PackedScene" uid="uid://dqwxbuu4rnrpd" path="res://GrayBox/Blocks/block_256x32.tscn" id="15_chamf"]
+[ext_resource type="PackedScene" uid="uid://c1mh045owampr" path="res://GrayBox/Blocks/block_16x8.tscn" id="16_bt14o"]
+[ext_resource type="PackedScene" uid="uid://carm5nvtw2eed" path="res://GrayBox/Blocks/block_8x8.tscn" id="17_4exf5"]
+
+[node name="BlocksCollection" type="Node2D"]
+script = ExtResource("1_vxx74")
+
+[node name="Block16x16" parent="." instance=ExtResource("1_xoxfi")]
+position = Vector2(136, 72)
+
+[node name="Block16x32" parent="." instance=ExtResource("2_rqvc2")]
+position = Vector2(120, 80)
+
+[node name="Block16x64" parent="." instance=ExtResource("3_5h7mx")]
+position = Vector2(72, 96)
+
+[node name="Block16x128" parent="." instance=ExtResource("4_6inpx")]
+position = Vector2(56, 128)
+
+[node name="Block16x256" parent="." instance=ExtResource("5_00wli")]
+position = Vector2(40, 128)
+
+[node name="Block32x16" parent="." instance=ExtResource("6_ws5f1")]
+position = Vector2(96, 104)
+
+[node name="Block32x32" parent="." instance=ExtResource("7_g24d4")]
+position = Vector2(96, 80)
+
+[node name="Block32x64" parent="." instance=ExtResource("8_iorsf")]
+position = Vector2(128, 32)
+
+[node name="Block32x256" parent="." instance=ExtResource("9_swyq4")]
+position = Vector2(16, 128)
+
+[node name="Block64x16" parent="." instance=ExtResource("10_ywgdl")]
+position = Vector2(224, 232)
+
+[node name="Block64x32" parent="." instance=ExtResource("11_g1hes")]
+position = Vector2(160, 224)
+
+[node name="Block64x64" parent="." instance=ExtResource("12_ffn1i")]
+position = Vector2(80, 32)
+
+[node name="Block128x16" parent="." instance=ExtResource("13_bqbo6")]
+position = Vector2(192, 248)
+
+[node name="Block256x16" parent="." instance=ExtResource("14_78tia")]
+position = Vector2(128, 296)
+
+[node name="Block256x32" parent="." instance=ExtResource("15_chamf")]
+position = Vector2(128, 272)
+
+[node name="Block16x8" parent="." instance=ExtResource("16_bt14o")]
+position = Vector2(128, 80)
+
+[node name="Block8x8" parent="." instance=ExtResource("17_4exf5")]
+position = Vector2(128, 88)

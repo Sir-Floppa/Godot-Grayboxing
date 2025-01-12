@@ -8,9 +8,11 @@
 script = ExtResource("1_p61tj")
 
 [node name="Texture" parent="." instance=ExtResource("1_t2y53")]
+position = Vector2(4, 4)
 hframes = 64
 vframes = 64
 frame = 980
 
 [node name="Collision" parent="." instance=ExtResource("2_873gs")]
+position = Vector2(4, 4)
 scale = Vector2(0.5, 0.5)
