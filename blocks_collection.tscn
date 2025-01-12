@@ -1,6 +1,6 @@
 [gd_scene load_steps=19 format=3 uid="uid://brhkjkrvlb5w0"]
 
-[ext_resource type="PackedScene" uid="uid://buhiyjcolju5w" path="res://GrayBox/Manager/graybox_manager.tscn" id="1_k65ml"]
+[ext_resource type="Script" path="res://GrayBox/Manager/graybox_manager.gd" id="1_vxx74"]
 [ext_resource type="PackedScene" uid="uid://bojtldn7qrxdl" path="res://GrayBox/Blocks/block_16x16.tscn" id="1_xoxfi"]
 [ext_resource type="PackedScene" uid="uid://we38qt0h03wd" path="res://GrayBox/Blocks/block_16x32.tscn" id="2_rqvc2"]
 [ext_resource type="PackedScene" uid="uid://dynli0wdypqf" path="res://GrayBox/Blocks/block_16x64.tscn" id="3_5h7mx"]
@@ -20,56 +20,55 @@
 [ext_resource type="PackedScene" uid="uid://carm5nvtw2eed" path="res://GrayBox/Blocks/block_8x8.tscn" id="17_4exf5"]
 
 [node name="BlocksCollection" type="Node2D"]
+script = ExtResource("1_vxx74")
 
-[node name="GrayboxManager" parent="." instance=ExtResource("1_k65ml")]
-
-[node name="Block16x16" parent="GrayboxManager" instance=ExtResource("1_xoxfi")]
+[node name="Block16x16" parent="." instance=ExtResource("1_xoxfi")]
 position = Vector2(136, 72)
 
-[node name="Block16x32" parent="GrayboxManager" instance=ExtResource("2_rqvc2")]
+[node name="Block16x32" parent="." instance=ExtResource("2_rqvc2")]
 position = Vector2(120, 80)
 
-[node name="Block16x64" parent="GrayboxManager" instance=ExtResource("3_5h7mx")]
+[node name="Block16x64" parent="." instance=ExtResource("3_5h7mx")]
 position = Vector2(72, 96)
 
-[node name="Block16x128" parent="GrayboxManager" instance=ExtResource("4_6inpx")]
+[node name="Block16x128" parent="." instance=ExtResource("4_6inpx")]
 position = Vector2(56, 128)
 
-[node name="Block16x256" parent="GrayboxManager" instance=ExtResource("5_00wli")]
+[node name="Block16x256" parent="." instance=ExtResource("5_00wli")]
 position = Vector2(40, 128)
 
-[node name="Block32x16" parent="GrayboxManager" instance=ExtResource("6_ws5f1")]
+[node name="Block32x16" parent="." instance=ExtResource("6_ws5f1")]
 position = Vector2(96, 104)
 
-[node name="Block32x32" parent="GrayboxManager" instance=ExtResource("7_g24d4")]
+[node name="Block32x32" parent="." instance=ExtResource("7_g24d4")]
 position = Vector2(96, 80)
 
-[node name="Block32x64" parent="GrayboxManager" instance=ExtResource("8_iorsf")]
+[node name="Block32x64" parent="." instance=ExtResource("8_iorsf")]
 position = Vector2(128, 32)
 
-[node name="Block32x256" parent="GrayboxManager" instance=ExtResource("9_swyq4")]
+[node name="Block32x256" parent="." instance=ExtResource("9_swyq4")]
 position = Vector2(16, 128)
 
-[node name="Block64x16" parent="GrayboxManager" instance=ExtResource("10_ywgdl")]
+[node name="Block64x16" parent="." instance=ExtResource("10_ywgdl")]
 position = Vector2(224, 232)
 
-[node name="Block64x32" parent="GrayboxManager" instance=ExtResource("11_g1hes")]
+[node name="Block64x32" parent="." instance=ExtResource("11_g1hes")]
 position = Vector2(160, 224)
 
-[node name="Block64x64" parent="GrayboxManager" instance=ExtResource("12_ffn1i")]
+[node name="Block64x64" parent="." instance=ExtResource("12_ffn1i")]
 position = Vector2(80, 32)
 
-[node name="Block128x16" parent="GrayboxManager" instance=ExtResource("13_bqbo6")]
+[node name="Block128x16" parent="." instance=ExtResource("13_bqbo6")]
 position = Vector2(192, 248)
 
-[node name="Block256x16" parent="GrayboxManager" instance=ExtResource("14_78tia")]
+[node name="Block256x16" parent="." instance=ExtResource("14_78tia")]
 position = Vector2(128, 296)
 
-[node name="Block256x32" parent="GrayboxManager" instance=ExtResource("15_chamf")]
+[node name="Block256x32" parent="." instance=ExtResource("15_chamf")]
 position = Vector2(128, 272)
 
-[node name="Block16x8" parent="GrayboxManager" instance=ExtResource("16_bt14o")]
+[node name="Block16x8" parent="." instance=ExtResource("16_bt14o")]
 position = Vector2(128, 80)
 
-[node name="Block8x8" parent="GrayboxManager" instance=ExtResource("17_4exf5")]
+[node name="Block8x8" parent="." instance=ExtResource("17_4exf5")]
 position = Vector2(128, 88)
