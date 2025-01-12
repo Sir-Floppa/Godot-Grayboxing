@@ -3,7 +3,7 @@
 [ext_resource type="Script" path="res://GrayBox/Common/block.gd" id="1_ppwn6"]
 [ext_resource type="PackedScene" uid="uid://b2744732acboc" path="res://GrayBox/Common/texture.tscn" id="2_q8ijo"]
 
-[node name="Slope256x32" type="StaticBody2D"]
+[node name="RoofSlopeAsc16x32" type="StaticBody2D"]
 script = ExtResource("1_ppwn6")
 
 [node name="Texture" parent="." instance=ExtResource("2_q8ijo")]

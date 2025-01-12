@@ -1,12 +1,12 @@
 [gd_scene load_steps=3 format=3 uid="uid://ctm70yycar2f1"]
 
-[ext_resource type="Script" path="res://GrayBox/Common/block.gd" id="1_8ke5y"]
-[ext_resource type="PackedScene" uid="uid://b2744732acboc" path="res://GrayBox/Common/texture.tscn" id="2_r7rro"]
+[ext_resource type="Script" path="res://GrayBox/Common/block.gd" id="1_1ourg"]
+[ext_resource type="PackedScene" uid="uid://b2744732acboc" path="res://GrayBox/Common/texture.tscn" id="2_dke77"]
 
-[node name="Slope256x32" type="StaticBody2D"]
-script = ExtResource("1_8ke5y")
+[node name="RoofSlopeAsc32x64" type="StaticBody2D"]
+script = ExtResource("1_1ourg")
 
-[node name="Texture" parent="." instance=ExtResource("2_r7rro")]
+[node name="Texture" parent="." instance=ExtResource("2_dke77")]
 hframes = 16
 vframes = 8
 frame = 12
