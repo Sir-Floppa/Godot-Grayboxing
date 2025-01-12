@@ -1,0 +1,86 @@
+[gd_scene load_steps=22 format=3 uid="uid://fretlfmcj7ng"]
+
+[ext_resource type="Script" path="res://GrayBox/Manager/graybox_manager.gd" id="1_js648"]
+[ext_resource type="PackedScene" uid="uid://cnhtd217dhbj2" path="res://GrayBox/RoofSlopes/roof_slope_asc_8x8.tscn" id="2_84wdv"]
+[ext_resource type="PackedScene" uid="uid://d3ybcwwhwopyk" path="res://GrayBox/RoofSlopes/roof_slope_asc_16x16.tscn" id="3_0yan5"]
+[ext_resource type="PackedScene" uid="uid://d3vru27uy615h" path="res://GrayBox/RoofSlopes/roof_slope_asc_16x32.tscn" id="4_sj1ls"]
+[ext_resource type="PackedScene" uid="uid://ckvash7xer5h2" path="res://GrayBox/RoofSlopes/roof_slope_asc_16x64.tscn" id="5_013ng"]
+[ext_resource type="PackedScene" uid="uid://d38ihfq1nxoaa" path="res://GrayBox/RoofSlopes/roof_slope_asc_32x16.tscn" id="6_cwkcx"]
+[ext_resource type="PackedScene" uid="uid://b5qjtr5atosg8" path="res://GrayBox/RoofSlopes/roof_slope_asc_32x32.tscn" id="7_hyog5"]
+[ext_resource type="PackedScene" uid="uid://ctm70yycar2f1" path="res://GrayBox/RoofSlopes/roof_slope_asc_32x64.tscn" id="8_xmx4n"]
+[ext_resource type="PackedScene" uid="uid://co8yb52c7ee6n" path="res://GrayBox/RoofSlopes/roof_slope_asc_64x16.tscn" id="9_71rfo"]
+[ext_resource type="PackedScene" uid="uid://bnc0423qt8u06" path="res://GrayBox/RoofSlopes/roof_slope_asc_64x32.tscn" id="10_ro0fm"]
+[ext_resource type="PackedScene" uid="uid://bu1ud6kmjx32v" path="res://GrayBox/RoofSlopes/roof_slope_asc_64x64.tscn" id="11_6yjk4"]
+[ext_resource type="PackedScene" uid="uid://dulmvr88ss820" path="res://GrayBox/RoofSlopes/roof_slope_desc_8x8.tscn" id="12_xdagk"]
+[ext_resource type="PackedScene" uid="uid://8hpncetowugp" path="res://GrayBox/RoofSlopes/roof_slope_desc_16x16.tscn" id="13_2e4u2"]
+[ext_resource type="PackedScene" uid="uid://nmyit76tj4gp" path="res://GrayBox/RoofSlopes/roof_slope_desc_16x32.tscn" id="14_24lmt"]
+[ext_resource type="PackedScene" uid="uid://rsexr6i8a71m" path="res://GrayBox/RoofSlopes/roof_slope_desc_16x64.tscn" id="15_rfh6k"]
+[ext_resource type="PackedScene" uid="uid://bsiobjf4kcn56" path="res://GrayBox/RoofSlopes/roof_slope_desc_32x16.tscn" id="16_n22lw"]
+[ext_resource type="PackedScene" uid="uid://dit7smr2r438w" path="res://GrayBox/RoofSlopes/roof_slope_desc_32x32.tscn" id="17_hl7md"]
+[ext_resource type="PackedScene" uid="uid://dtf3f17asxb7h" path="res://GrayBox/RoofSlopes/roof_slope_desc_32x64.tscn" id="18_py7f5"]
+[ext_resource type="PackedScene" uid="uid://cy2ytq0lpyfns" path="res://GrayBox/RoofSlopes/roof_slope_desc_64x16.tscn" id="19_pn5c4"]
+[ext_resource type="PackedScene" uid="uid://q8qnur23nsat" path="res://GrayBox/RoofSlopes/roof_slope_desc_64x32.tscn" id="20_rxk4q"]
+[ext_resource type="PackedScene" uid="uid://75mkw37p8hc" path="res://GrayBox/RoofSlopes/roof_slope_desc_64x64.tscn" id="21_hwvgu"]
+
+[node name="RoofSlopeCollection" type="Node2D"]
+script = ExtResource("1_js648")
+
+[node name="RoofSlopeAsc8x8" parent="." instance=ExtResource("2_84wdv")]
+position = Vector2(232, 96)
+
+[node name="RoofSlopeAsc16x16" parent="." instance=ExtResource("3_0yan5")]
+position = Vector2(216, 104)
+
+[node name="RoofSlopeAsc16x32" parent="." instance=ExtResource("4_sj1ls")]
+position = Vector2(216, 80)
+
+[node name="RoofSlopeAsc16x64" parent="." instance=ExtResource("5_013ng")]
+position = Vector2(216, 32)
+
+[node name="RoofSlopeAsc32x16" parent="." instance=ExtResource("6_cwkcx")]
+position = Vector2(176, 104)
+
+[node name="RoofSlopeAsc32x32" parent="." instance=ExtResource("7_hyog5")]
+position = Vector2(176, 80)
+
+[node name="RoofSlopeAsc32x64" parent="." instance=ExtResource("8_xmx4n")]
+position = Vector2(176, 32)
+
+[node name="RoofSlopeAsc64x16" parent="." instance=ExtResource("9_71rfo")]
+position = Vector2(96, 104)
+
+[node name="RoofSlopeAsc64x32" parent="." instance=ExtResource("10_ro0fm")]
+position = Vector2(96, 80)
+
+[node name="RoofSlopeAsc64x64" parent="." instance=ExtResource("11_6yjk4")]
+position = Vector2(96, 32)
+
+[node name="RoofSlopeDesc8x8" parent="." instance=ExtResource("12_xdagk")]
+position = Vector2(224, 96)
+
+[node name="RoofSlopeDesc16" parent="." instance=ExtResource("13_2e4u2")]
+position = Vector2(200, 104)
+
+[node name="RoofSlopeDesc16x32" parent="." instance=ExtResource("14_24lmt")]
+position = Vector2(200, 80)
+
+[node name="RoofSlopeDesc16x64" parent="." instance=ExtResource("15_rfh6k")]
+position = Vector2(200, 32)
+
+[node name="RoofSlopeDesc32x16" parent="." instance=ExtResource("16_n22lw")]
+position = Vector2(144, 104)
+
+[node name="RoofSlopeDesc32x32" parent="." instance=ExtResource("17_hl7md")]
+position = Vector2(144, 80)
+
+[node name="RoofSlopeDesc32x64" parent="." instance=ExtResource("18_py7f5")]
+position = Vector2(144, 32)
+
+[node name="RoofSlopeDesc64x16" parent="." instance=ExtResource("19_pn5c4")]
+position = Vector2(32, 104)
+
+[node name="RoofSlope64x32" parent="." instance=ExtResource("20_rxk4q")]
+position = Vector2(32, 80)
+
+[node name="RoofSlope64x64" parent="." instance=ExtResource("21_hwvgu")]
+position = Vector2(32, 32)

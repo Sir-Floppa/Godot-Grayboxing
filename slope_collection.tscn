@@ -1,0 +1,94 @@
+[gd_scene load_steps=24 format=3 uid="uid://hllm2p72ctmp"]
+
+[ext_resource type="Script" path="res://GrayBox/Manager/graybox_manager.gd" id="1_pairb"]
+[ext_resource type="PackedScene" uid="uid://s7cqb21obxdx" path="res://GrayBox/Slopes/slope_asc_8x8.tscn" id="2_5cskr"]
+[ext_resource type="PackedScene" uid="uid://dmytflnbjntdt" path="res://GrayBox/Slopes/slope_asc_16x16.tscn" id="3_f877r"]
+[ext_resource type="PackedScene" uid="uid://jur8iyo1fodc" path="res://GrayBox/Slopes/slope_asc_16x32.tscn" id="4_165p7"]
+[ext_resource type="PackedScene" uid="uid://hmpnm52efjp8" path="res://GrayBox/Slopes/slope_asc_16x64.tscn" id="5_gshxo"]
+[ext_resource type="PackedScene" uid="uid://b7d1p04sy6x6h" path="res://GrayBox/Slopes/slope_asc_32x16.tscn" id="6_degtw"]
+[ext_resource type="PackedScene" uid="uid://ksbuojqcvc48" path="res://GrayBox/Slopes/slope_asc_32x32.tscn" id="7_oc8rp"]
+[ext_resource type="PackedScene" uid="uid://chiet01radbed" path="res://GrayBox/Slopes/slope_asc_32x64.tscn" id="8_4rduf"]
+[ext_resource type="PackedScene" uid="uid://d0c8270sckpon" path="res://GrayBox/Slopes/slope_asc_64x16.tscn" id="9_621og"]
+[ext_resource type="PackedScene" uid="uid://csm2txykfhi5a" path="res://GrayBox/Slopes/slope_asc_64x32.tscn" id="10_j77ym"]
+[ext_resource type="PackedScene" uid="uid://ud3hpqgxb35q" path="res://GrayBox/Slopes/slope_asc_64x64.tscn" id="11_3fy23"]
+[ext_resource type="PackedScene" uid="uid://dnyd5mbtmlj8i" path="res://GrayBox/Slopes/slope_asc_128x16.tscn" id="12_7mbn4"]
+[ext_resource type="PackedScene" uid="uid://bqkbwtjfo8qke" path="res://GrayBox/Slopes/slope_desc_8x8.tscn" id="13_2dm0c"]
+[ext_resource type="PackedScene" uid="uid://cfsa3rl6yirtg" path="res://GrayBox/Slopes/slope_desc_16x16.tscn" id="14_f14js"]
+[ext_resource type="PackedScene" uid="uid://dg7ocma5xh5eo" path="res://GrayBox/Slopes/slope_desc_16x32.tscn" id="15_en8bg"]
+[ext_resource type="PackedScene" uid="uid://2talmuqru1n3" path="res://GrayBox/Slopes/slope_desc_16x64.tscn" id="16_e0eqs"]
+[ext_resource type="PackedScene" uid="uid://ct87jpc1x22lu" path="res://GrayBox/Slopes/slope_desc_32x16.tscn" id="17_dsdn7"]
+[ext_resource type="PackedScene" uid="uid://cnm1i52p6fir" path="res://GrayBox/Slopes/slope_desc_32x32.tscn" id="18_2ac83"]
+[ext_resource type="PackedScene" uid="uid://x7y2rsfols2c" path="res://GrayBox/Slopes/slope_desc_32x64.tscn" id="19_3xxfr"]
+[ext_resource type="PackedScene" uid="uid://dkrlmu85a5d8x" path="res://GrayBox/Slopes/slope_desc_64x16.tscn" id="20_gkepv"]
+[ext_resource type="PackedScene" uid="uid://1wt01sf5t5gm" path="res://GrayBox/Slopes/slope_desc_64x32.tscn" id="21_ldrwh"]
+[ext_resource type="PackedScene" uid="uid://c6i28tw4rlear" path="res://GrayBox/Slopes/slope_desc_64x64.tscn" id="22_c73ff"]
+[ext_resource type="PackedScene" uid="uid://dwo6t5cycv85e" path="res://GrayBox/Slopes/slope_desc_128x16.tscn" id="23_orhtu"]
+
+[node name="SlopeCollection" type="Node2D"]
+script = ExtResource("1_pairb")
+
+[node name="SlopeAsc8x8" parent="." instance=ExtResource("2_5cskr")]
+position = Vector2(224, 128)
+
+[node name="SlopeAsc16x16" parent="." instance=ExtResource("3_f877r")]
+position = Vector2(200, 128)
+
+[node name="SlopeAsc16x32" parent="." instance=ExtResource("4_165p7")]
+position = Vector2(200, 104)
+
+[node name="SlopeAsc16x64" parent="." instance=ExtResource("5_gshxo")]
+position = Vector2(200, 56)
+
+[node name="SlopeAsc32x16" parent="." instance=ExtResource("6_degtw")]
+position = Vector2(144, 128)
+
+[node name="SlopeAsc32x32" parent="." instance=ExtResource("7_oc8rp")]
+position = Vector2(144, 104)
+
+[node name="SlopeAsc32x64" parent="." instance=ExtResource("8_4rduf")]
+position = Vector2(144, 56)
+
+[node name="SlopeAsc64x16" parent="." instance=ExtResource("9_621og")]
+position = Vector2(32, 128)
+
+[node name="SlopeAsc64x32" parent="." instance=ExtResource("10_j77ym")]
+position = Vector2(32, 104)
+
+[node name="SlopeAsc64x64" parent="." instance=ExtResource("11_3fy23")]
+position = Vector2(32, 56)
+
+[node name="SlopeAsc128x16" parent="." instance=ExtResource("12_7mbn4")]
+position = Vector2(64, 8)
+
+[node name="SlopeDesc8x8" parent="." instance=ExtResource("13_2dm0c")]
+position = Vector2(232, 128)
+
+[node name="SlopeDesc16x16" parent="." instance=ExtResource("14_f14js")]
+position = Vector2(216, 128)
+
+[node name="SlopeDesc16x32" parent="." instance=ExtResource("15_en8bg")]
+position = Vector2(216, 104)
+
+[node name="SlopeDesc16x64" parent="." instance=ExtResource("16_e0eqs")]
+position = Vector2(216, 56)
+
+[node name="SlopeDesc32x16" parent="." instance=ExtResource("17_dsdn7")]
+position = Vector2(176, 128)
+
+[node name="SlopeDesc32x32" parent="." instance=ExtResource("18_2ac83")]
+position = Vector2(176, 104)
+
+[node name="SlopeDesc32x64" parent="." instance=ExtResource("19_3xxfr")]
+position = Vector2(176, 56)
+
+[node name="SlopeDesc64x16" parent="." instance=ExtResource("20_gkepv")]
+position = Vector2(96, 128)
+
+[node name="SlopeDesc64x32" parent="." instance=ExtResource("21_ldrwh")]
+position = Vector2(96, 104)
+
+[node name="SlopeDesc64x64" parent="." instance=ExtResource("22_c73ff")]
+position = Vector2(96, 56)
+
+[node name="SlopeDesc128x16" parent="." instance=ExtResource("23_orhtu")]
+position = Vector2(192, 8)
