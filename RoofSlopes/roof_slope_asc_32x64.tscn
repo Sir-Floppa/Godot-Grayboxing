@@ -11,6 +11,6 @@ hframes = 16
 vframes = 8
 frame = 12
 
-[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
+[node name="Collision" type="CollisionPolygon2D" parent="."]
 build_mode = 1
 polygon = PackedVector2Array(-16, 32, 16, -32, -16, -32)
