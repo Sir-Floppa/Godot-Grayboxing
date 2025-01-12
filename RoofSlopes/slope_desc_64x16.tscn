@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=3 uid="uid://cy2ytq0lpyfns"]
+
+[ext_resource type="Script" path="res://GrayBox/Common/block.gd" id="1_s7f3r"]
+[ext_resource type="PackedScene" uid="uid://b2744732acboc" path="res://GrayBox/Common/texture.tscn" id="2_0py1t"]
+
+[node name="Slope256x32" type="StaticBody2D"]
+script = ExtResource("1_s7f3r")
+
+[node name="Texture" parent="." instance=ExtResource("2_0py1t")]
+hframes = 8
+vframes = 32
+frame = 52
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
+build_mode = 1
+polygon = PackedVector2Array(32, 8, -32, 8, -32, -8)
