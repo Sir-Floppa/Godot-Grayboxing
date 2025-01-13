@@ -50,22 +50,22 @@ position = Vector2(128, 32)
 position = Vector2(16, 128)
 
 [node name="Block64x16" parent="." instance=ExtResource("10_ywgdl")]
-position = Vector2(224, 232)
+position = Vector2(368, 56)
 
 [node name="Block64x32" parent="." instance=ExtResource("11_g1hes")]
-position = Vector2(160, 224)
+position = Vector2(304, 48)
 
 [node name="Block64x64" parent="." instance=ExtResource("12_ffn1i")]
 position = Vector2(80, 32)
 
 [node name="Block128x16" parent="." instance=ExtResource("13_bqbo6")]
-position = Vector2(192, 248)
+position = Vector2(336, 72)
 
 [node name="Block256x16" parent="." instance=ExtResource("14_78tia")]
-position = Vector2(128, 296)
+position = Vector2(272, 40)
 
 [node name="Block256x32" parent="." instance=ExtResource("15_chamf")]
-position = Vector2(128, 272)
+position = Vector2(272, 16)
 
 [node name="Block16x8" parent="." instance=ExtResource("16_bt14o")]
 position = Vector2(128, 80)
